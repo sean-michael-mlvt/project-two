@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel One</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body class="container-fluid nopadding" data-bs-theme="dark">
+    
+    <!-- NAVBAR -->
+    <nav id="navbar-top" class="navbar navbar-expand-sm bg-dark sticky-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!--NAVBAR BRAND-->
+        <a class="navbar-brand" href="#">Malavet</a>
+
+        <!--TOGGLE BUTTON-->
+        <button class="navbar-toggler color-whitesmoke" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--COLLAPSABLE LINKS-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Projects</a>
+            <a class="nav-link" href="#safe-travels">Safe Travels</a>
+            <a class="nav-link" href="#poke-pallettes">Poke Pallettes</a>
+            <a class="nav-link" href="#music-showcase">Music Showcase</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <hr class="no-margin">
+
+    <!--Scroll Section-->
+    <div id="scrolling-section" data-bs-spy="scroll" data-bs-target="#navbar-top">
+
+      <!--Projects & Tools Banner-->
+      <div class="row row-odd" id="banner-projects">
+        <img id="honeycomb" class="img-fluid object-fit-cover" src="assets/img/dark-honeycomb.jpg" alt="simple, dark honeycomb pattern background.">
+        <h1 id="projects-banner-text" class="text-light position-absolute top-50 start-50 translate-middle text-center">Projects & Tools</h1>
+      </div>
+
+      <!--Safe Travels Row-->
+      <div id="safe-travels" class="row p-4">
+        <div class="col-sm-8 d-flex align-items-center">
+          <!--Safe Travels Text-->
+          <div class="text-center">
+            <h3 id="safe-travels-text"class="text-light">Safe Travels
+            </h3>
+             <p class="p-3">A cross-platform mobile application, Safe Travels was my group's UGA Hacks 8 project that we made in under 48 hours using flutter, dart, and git. I worked on the backend, connecting to APIs and storing information in modular classes, as well as on the front end, designing simple information cards for the home page.  </p>
+          </div>
+        </div>
+        <!--Flutter Logo-->
+        <div class="col-sm-4 d-flex align-items-center justify-content-center">
+          <img class="img-fluid" id="FlutterLogo"src="assets/img/FlutterLogo.png" alt="Flutter logo: A simple blue F made to look vaguely similar to the wings of a bird.">
+        </div>
+      </div>
+
+      <!--Poke Pallettes Row-->
+      <div id="poke-pallettes" class="row row-odd p-4">
+        <div class="col-sm-8 d-flex align-items-center order-sm-2">
+          <!--Poke Pallettes Text--> 
+          <div class="text-center">
+            <h3 id="poke-pallettes-text"class="text-light">Poke Pallettes
+            </h3>
+             <p class="p-3">A javafx application, Poke Pallettes is an art tool which connects to both the Poke API and Imagga API to deliver a pokemon's details, image, and color pallette to a graphical user interface. The project was made with Java and the Maven build tool.</p>
+          </div>
+        </div>
+        <!--Java Logo-->
+        <div class="col-sm-4 d-flex align-items-center justify-content-center order-sm-1">
+          <img class="img-fluid" id="JavaLogo"src="assets/img/JavaLogo.png" alt="The Java logo, a coffee cup with a simple flame rising from it.">
+        </div>
+      </div>
+
+      <!--Music Showcase Row-->
+      <div id="music-showcase" class="row p-4">
+        <div class="col-sm-8 d-flex align-items-center">
+          <!--Music Showcase Text-->
+          <div class="text-center">
+            <h3 id="music-showcase-text"class="text-light">Music Showcase
+            </h3>
+             <p class="p-3">A multi-page website, my music showcase is built with pure html and css. It includes simple hover animations and responsive sizing to accomodate viewing on mobile.</p>
+          </div>
+        </div>
+        <!--HTML CSS Logo-->
+        <div class="col-sm-4 d-flex align-items-center justify-content-center">
+          <img class="img-fluid" id="HtmlCssLogo" src="assets/img/HTMLCSSlogos2.png" alt="HTML and CSS logos, two shield shapes, one orange and one blue, with the numbers 5 and 3 on each, representing the version numbers.">
+        </div>
+      </div>
+
+
+        
+    </div>
+
+    <!--Javascript-->
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

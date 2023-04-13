@@ -1,0 +1,118 @@
+
+/*FONT*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Code Pro", sans-serif;
+}
+/*MOBILE NAVBAR*/
+.navbar-mobile>ul>li {
+    border-bottom: solid 1px var(--main-color);
+
+}
+
+.navbar-mobile>ul {
+    background-color: #062f3b;
+}
+
+.navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #dbe6e9;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #a2c9d4;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #a2c9d4;
+}
+
+/*COLOR CORRECTION*/
+html {
+    --main-color: #1f7691;
+    --secondary-color: #5eb2cc;
+}
+
+a, .about .content ul i {
+    color: var(--main-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+
+#preloader:before {
+    border: 6px solid var(--main-color);
+}
+
+.back-to-top, .get-started-btn, .section-title h2::after, .about .content .btn-learn-more:hover {
+    background: var(--main-color);
+}
+
+.back-to-top:hover, .get-started-btn:hover, .contact .php-email-form button[type=submit]:hover {
+    background: var(--secondary-color);
+}
+
+.navbar>ul>li>a:before {
+    background-color: var(--main-color);
+}
+
+.navbar .dropdown ul {
+    border-top: var(--main-color);
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: var(--main-color);
+}
+
+#hero .play-btn {
+     background: radial-gradient(var(--main-color) 50%, rgba(10, 91, 116, 0.4) 52%);
+}
+
+#hero .play-btn::before {
+    border: 5px solid #0f617a;
+}
+
+#hero .play-btn:hover::after {
+  border-left: 15px solid var(--main-color);
+}
+
+.section-bg {
+  background-color: #8fc9ff;
+}
+
+.about .content .btn-learn-more {
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.services .icon-box .icon, .portfolio .portfolio-item .portfolio-info,
+.contact .php-email-form button[type=submit] {
+    background: var(--main-color);
+}
+
+.services .icon-box:hover {
+    border-color: var(--secondary-color);
+}
+
+.services .icon-box:hover h4 a, .counts .counters span, .contact .info i  {
+    color: var(--main-color)
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: var(--main-color);
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel One</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body class="container-fluid nopadding" data-bs-theme="dark">
+    
+    <!-- NAVBAR -->
+    <nav id="navbar-top" class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!--NAVBAR BRAND-->
+        <a class="navbar-brand font-src" id="Malavet" href="#">Malavet</a>
+
+        <!--TOGGLE BUTTON-->
+        <button class="navbar-toggler color-whitesmoke" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--COLLAPSABLE LINKS-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Projects</a>
+            <a class="nav-link" href="#safe-travels">Safe Travels</a>
+            <a class="nav-link" href="#poke-pallettes">Poké Pallettes</a>
+            <a class="nav-link" href="#music-showcase">Music Showcase</a>
+            <a class="nav-link" href="#this-page">Portfolio</a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Versions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Panel One</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../panel-two/index.html">Panel Two</a></li>
+                <li><a class="dropdown-item" href="../panel-three/index.html">Panel Three</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <hr class="no-margin">
+
+    <!-- Attempted Scrollspy:
+    <div id="scrolling-section" data-bs-spy="scroll" data-bs-target="#navbar-top" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="bg-body-tertiary p-0 overflow-x-hidden overflow-y-scroll" tabindex="0">
+    -->
+
+    <!--Working Scroll Section Opener-->
+    <!--<div id="scrolling-section" class="bg-body-tertiary p-0 overflow-x-hidden overflow-y-scroll" tabindex="0">-->
+      
+    <!--Scroll Section-->
+    <div id="scrolling-section" class="bg-body-tertiary" data-bs-spy="scroll" data-bs-target="#navbar-top">
+
+      <!--Projects & Tools Banner-->
+      <div class="row row-odd" id="banner-projects">
+        <img id="honeycomb" class="img-fluid object-fit-cover" src="assets/img/dark-honeycomb.jpg" alt="simple, dark honeycomb pattern background.">
+        <h1 id="projects-banner-text" class="font-src text-light position-absolute top-50 start-50 translate-middle text-center">Projects & Tools</h1>
+      </div>
+
+      <!--Safe Travels Row-->
+      <section id="safe-travels" class="row p-4 padless">
+        <div class="col-sm-8 d-flex justify-content-center align-items-center">
+          <!--Safe Travels Text-->
+          <div class="project-description">
+            <h3 id="safe-travels-text"class="text-light text-center font-src">Safe Travels
+            </h3>
+             <p class="p-3">A cross-platform mobile application, Safe Travels was my group's UGA Hacks 8 project that we made in under 48 hours using flutter, dart, and git. I worked on the backend, connecting to APIs and storing information in modular classes, as well as on the front end, designing simple information cards for the home page. This project taught me not to be afraid of learning new technologies. I had never used Flutter before, so there was a steep learning curve. I also learned the importance of good teamwork and efficient delegation of tasks. 
+             </p>
+          </div>
+        </div>
+        <!--Flutter Logo & Info Button-->
+        <div class="col-sm-4 d-flex align-items-center justify-content-center">
+          <div>
+            <img class="img-fluid" id="FlutterLogo"src="assets/img/FlutterLogo.png" alt="Flutter logo: A simple blue F made to look vaguely similar to the wings of a bird.">
+
+            <div class="d-grid gap-2 col-6 mx-auto more-info">
+              <a role="button" href="https://devpost.com/software/safetravels-y83wpe" class="btn btn-outline-light">More info</a>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <!--Poke Pallettes Row-->
+      <section id="poke-pallettes" class="row row-odd p-4 padless">
+        <div class="col-sm-8 d-flex justify-content-center align-items-center order-sm-2">
+          <!--Poke Pallettes Text--> 
+          <div class="project-description">
+            <h3 id="poke-pallettes-text"class="font-src text-light text-center">Poké Pallettes
+            </h3>
+             <p class="p-3">A javafx application, Poké Pallettes is an art tool which connects to both the Pokémon API and Imagga API to deliver a pokémon's details, image, and color pallette to a graphical user interface. The project was made with Java and the Maven build tool. It was the culmination of my software development class, and I learned how to use threading and make sequential API calls from user input.</p>
+          </div>
+        </div>
+        <!--Java Logo & Button-->
+        <div class="col-sm-4 d-flex align-items-center justify-content-center order-sm-1">
+          <div>
+            <img class="img-fluid" id="JavaLogo"src="assets/img/JavaLogo.png" alt="The Java logo, a coffee cup with a simple flame rising from it.">
+
+          <div class="d-grid gap-2 col-6 mx-auto more-info">
+            <a role="button" href="https://youtu.be/65h-eKdqwWU" class="btn btn-outline-light">More info</a>
+          </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!--Music Showcase Row-->
+      <section id="music-showcase" class="row p-4 padless">
+        <div class="col-sm-8 d-flex justify-content-center align-items-center">
+          <!--Music Showcase Text-->
+          <div class="project-description">
+            <h3 id="music-showcase-text"class="font-src text-light text-center">Music Showcase
+            </h3>
+             <p class="p-3">A multi-page website, my music showcase is built with pure html and css. It includes simple hover animations and responsive sizing to accomodate viewing on mobile. I learned how to use media queries and css keyframe animations, as well as how to include proper accessibility via semantics and alt text for images.</p>
+          </div>
+        </div>
+        <!--HTML CSS Logo-->
+        <div class="col-sm-4 d-flex align-items-center justify-content-center">
+          <div>
+            <img class="img-fluid" id="HtmlCssLogo" src="assets/img/HTMLCSSlogos2.png" alt="HTML and CSS logos, two shield shapes, one orange and one blue, with the numbers 5 and 3 on each respectively, representing the version numbers.">
+
+            <div class="d-grid gap-2 col-5 mx-auto more-info">
+            <a role="button" href="http://sean-malavet.com/nmc/webdev/project-one/index.html" class="btn btn-outline-light">Visit Site</a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!--Portfolio Row-->
+      <section id="this-page" class="row row-odd p-4 padless">
+        <div class="col-sm-8 d-flex justify-content-center align-items-center order-sm-2">
+          <!--This Page Text--> 
+          <div class="project-description">
+            <h3 id="this-page-text"class="font-src text-light text-center">This Page
+            </h3>
+             <p class="p-3">A responsive web page, this portfolio is made with html, css, and Bootstrap. It changes layout for smaller screen widths by using Bootstrap's breakpoints and grid layout. I learned how to use and troubleshoot the Bootstrap frontend framework. </p>
+          </div>
+        </div>
+        <!--Bootstrap Logo-->
+        <div class="col-sm-4 d-flex align-items-center justify-content-center order-sm-1">
+          <div>
+            <img class="img-fluid p-2" id="BootstrapLogo"src="assets/img/BootstrapLogo.png" alt="The Bootstrap Logo, a capital B with a purple background.">
+
+            <div class="d-grid gap-2 col-5 mx-auto more-info">
+              <a role="button" href="#" class="btn btn-outline-light">Visit Site</a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+        
+    </div>
+
+    <!--Javascript-->
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

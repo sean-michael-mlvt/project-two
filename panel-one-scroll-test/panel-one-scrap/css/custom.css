@@ -1,0 +1,32 @@
+.nopadding {
+    padding: 0 !important;
+    height: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+.row-odd {
+    background-color: rgb(31, 30, 30);
+}
+
+
+#honeycomb {
+    filter: brightness(75%);
+    height: 100%;
+}
+
+#banner-projects {
+    position: relative;
+    height: 150px;
+}
+
+#FlutterLogo, #JavaLogo, #HtmlCssLogo {
+    max-height: 200px;
+}
+
+#scrolling-section {
+    height: auto;
+}
